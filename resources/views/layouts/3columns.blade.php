@@ -60,6 +60,16 @@
                     @elseif(Auth::user()->isAdmin())
                         @include('admin/components/sideNav')
                     @endif
+                @else
+                <div class="row p-md-3" style="background-color:#2626265e">
+                    <div class="col-12 center-align">
+                        <h3 class="white-text h3-responsive">You are currently not logged in to an account</h3>
+                    </div>
+                    <div class="col-12">
+                        <a class="btn btn-block blue white-text btn-md capitalize" href="{{route('login')}}">Sign In</a>
+                        <a class="btn btn-block black white-text btn-md capitalize" href="{{route('register')}}" style="margin-top:10px">Register</a>
+                    </div>
+                </div>
                 @endif
                 @yield('left')
             </div>

@@ -48,7 +48,7 @@
                     courses taught by instructors who are well grounded in their fields of study.</h5>
                 </div>
                 <div class="col-12 center-align pad-bot-50">
-                    <a class="btn no-radius btn-outline-white capitalize" href="./">Get Educated</a>
+                    <a class="btn no-radius btn-outline-white capitalize" href="{{ route('educate') }}">Get Educated</a>
                 </div>
                 </div>
             </div>

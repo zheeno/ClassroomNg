@@ -48,9 +48,12 @@
 
         <!--First column-->
         <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-            <h6 class="text-uppercase font-weight-bold">
+            <!-- <h6 class="text-uppercase font-weight-bold">
                 <strong>ClassroomNg</strong>
-            </h6>
+            </h6> -->
+            <a class="navbar-brand" href="/">
+                <img src="{{ asset('mdb/img/logo.png')}}" class="img-responsive" style="width:200px"/>
+            </a>
             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
             <p>ClassroomNg is a platform designed for 
                 educators to help them store course materials

@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar bg-dark">
     <div class="container">
         <!-- Navbar brand -->
-        <!-- <a class="navbar-brand" href="/">ClassroomNg</a> -->
-        <img src="{{ asset('mdb/img/logo.png')}}" class="img-responsive" style="width:200px"/>
+        <a class="navbar-brand" href="/">
+            <img src="{{ asset('mdb/img/logo.png')}}" class="img-responsive" style="width:200px"/>
+        </a>
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
