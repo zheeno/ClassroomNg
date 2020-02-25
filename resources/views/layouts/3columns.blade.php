@@ -18,6 +18,8 @@
         <link href="{{ asset('mdb/css/mdb.min.css') }}" rel="stylesheet">
         <!-- Your custom styles (optional) -->
         <link href="{{ asset('mdb/css/style.css') }}" rel="stylesheet">
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.css" rel="stylesheet">
 </head>
 <body>
     <!-- navigation bar -->
@@ -78,12 +80,37 @@
             </div>
             <div class="max-h-inherit-res m-0 overflow-y col-md-3 col-lg-2 pad-0 pad-top-50 grey lighten-3">
                 @yield('right')
+                <div class="row">
+                    <div class="col-12 center-align">
+                        <a target="_blank" href="http://c.jumia.io/?a=155802&c=1423&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=155802&utm_term=">
+                            <img src="https://affiliates.jumia.com/banners/Jumia Nigeria/Deals-of-the-day/250x250.jpg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 center-align">
+                        <a target="_blank" href="http://c.jumia.io/?a=155802&c=1236&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=155802&utm_term="><img src="https://affiliates.jumia.com/banners/Jumia Nigeria/Free1KVoucher/250x250.jpg"/></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 center-align">
+                        <a target="_blank" href="http://luno.com/invite/K9EWF"><img src="https://i1.wp.com/nigeriabitcoincommunity.com/wp-content/uploads/2019/03/Luno-buy-bitcoin-and-ethereum.jpg" style="width:250px;"/></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- modal -->
     @include('components/modal')
-            <!-- footer -->
-            @include('components/footer')
+    <!-- footer -->
+    @include('components/footer')
 </body>
+
+<!-- include summernote css/js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.js"></script>
+<script>
+$(document).ready(function() {
+  $('#summernote').summernote();
+});
+</script>
 </html>

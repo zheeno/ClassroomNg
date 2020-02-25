@@ -127,6 +127,7 @@ class HomeController extends Controller
     public function error_access_denied(){
         return view("errors/access_denied");
     }
+
 }
 
 function randomString($length = 25) {

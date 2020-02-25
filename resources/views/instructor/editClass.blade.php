@@ -25,9 +25,10 @@
                         <input type="text" name="class_title" class="form-control" value="{{ $params['class']->class_title }}" required/>
                     </div>
                     <div class="md-form">
-                        <label>Article</label>
-                        <textarea name="article" class="wysiwyg md-textarea" style="width:100%">{{ $params['class']->article }}</textarea>
+                        <label class="active">Article</label>
+                        <textarea id="summernote" name="article" style="width:100%">{{ $params['class']->article }}</textarea>
                     </div>
+                    <div class="alert alert-info">We recommend installing <strong><a href="https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en" target="_blank">Grammarly for Chrome</a></strong> on your browser to eliminate grammar errors</div>
                     <div class="row attachments img-list" data-count="{{count($params['class']->attachments)}}">
                         <a class="add-img-btn col-md-2 col-lg-3 card pad-0" style="margin:20px">
                             <div class="card-body center-align">

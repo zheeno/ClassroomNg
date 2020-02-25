@@ -315,3 +315,8 @@ Route::group(['prefix' => 'error'], function(){
 Auth::routes();
 
 Route::GET('/home', 'HomeController@index')->name('home');
+
+Route::GET('/refundPolicy', [
+    'uses' => 'CourseController@refundPolicy',
+    'as' => 'home.access_denied'
+]);

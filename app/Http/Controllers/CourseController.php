@@ -125,4 +125,8 @@ class CourseController extends Controller
             "title" => "Search Results for <small><i>&quot;".$request->input('q')."&quot;</i></small>"
         ]);
     }
+    
+    public function refundPolicy(){
+        return view("/refundPolicy");
+    }
 }

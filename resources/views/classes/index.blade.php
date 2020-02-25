@@ -37,7 +37,7 @@
         </div>
         <div class="container pad-top-50">
             <div class="row">
-                <div class="col-12 lead">
+                <div class="col-12">
                 {!! $params['class']->article !!}
                 </div>
             </div>
